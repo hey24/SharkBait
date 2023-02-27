@@ -1,11 +1,12 @@
 class SharksController < ApplicationController
-  before_action :set_list, only:[:edit, :show, :update, :destroy]
+  before_action :set_shark, only: [:edit, :show, :update, :destroy]
 
   def index
     @sharks = Shark.all
   end
 
-  def show; end
+  def show
+  end
 
   def new
     @shark = Shark.new
