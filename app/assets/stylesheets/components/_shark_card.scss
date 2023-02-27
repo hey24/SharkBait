@@ -2,6 +2,7 @@
   background-color: white;
   width: 400px;
   border-radius: 16px 16px 16px 16px;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
 }
 
 .card-shark img {
@@ -12,10 +13,14 @@
 .card-shark-info {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   padding: 8px;
 }
 
-.card-shark-info h3, .card-shark-info p {
+.card-shark-info h4, .card-shark-info p {
   margin: 0
+}
+
+.text-price {
+  font-weight: bold;
 }
