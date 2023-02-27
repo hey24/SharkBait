@@ -1,16 +1,19 @@
 .card-shark {
   background-color: white;
   width: 400px;
+  border-radius: 16px 16px 16px 16px;
 }
 
 .card-shark img {
   width: 100%;
+  border-radius: 16px 16px 0px 0px;
 }
 
 .card-shark-info {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end
+  align-items: flex-end;
+  padding: 8px;
 }
 
 .card-shark-info h3, .card-shark-info p {
