@@ -28,7 +28,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_27_162718) do
   create_table "sharks", force: :cascade do |t|
     t.string "name"
     t.integer "age"
-    t.string "type"
+    t.string "breed"
     t.string "description"
     t.integer "price"
     t.string "diet"

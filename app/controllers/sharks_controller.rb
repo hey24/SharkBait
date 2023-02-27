@@ -14,7 +14,9 @@ class SharksController < ApplicationController
 
   def create
     @shark = Shark.new(shark_params)
-    if @shark.save
+    @shark.user = current_user
+    # raise
+    if @shark.save!
       redirect_to shark_path(@shark)
     else
       render :new, status: :unprocessable_entity
@@ -43,6 +45,6 @@ class SharksController < ApplicationController
   end
 
   def shark_params
-    params.require(:shark).permit(:name, :age, :type, :description, :price, :diet, :picture_url)
+    params.require(:shark).permit(:name, :age, :breed, :description, :price, :diet, :picture_url)
   end
 end

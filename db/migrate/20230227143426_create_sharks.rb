@@ -3,7 +3,7 @@ class CreateSharks < ActiveRecord::Migration[7.0]
     create_table :sharks do |t|
       t.string :name
       t.integer :age
-      t.string :type
+      t.string :breed
       t.string :description
       t.integer :price
       t.string :diet
