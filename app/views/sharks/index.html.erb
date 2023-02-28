@@ -1,1 +1,7 @@
 <h1>Sharks!</h1>
+<% @sharks.each do |shark| %>
+  <div class="card-shark">
+    <%= shark.name %>
+    <img src="<%= shark.picture_url %>" alt="">
+  </div>
+<% end %>
