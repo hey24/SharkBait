@@ -1,36 +1,32 @@
-<h1 id="company_name">SharkBait</h1>
-<p id="tagline">I chews you</p>
-<%= image_tag "shark_vector.png", alt: "shark cartoon" %>
-<br>
-<br>
-<h2>Welcome to SharkBait!</h2>
-<p>your number-one resource for all your shark needs</p>
+<div>
+  <div class="card-homepage">
+    <div class="container-home d-flex flex-column align-items-center">
+      <h1 id="company_name">SharkBait</h1>
+        <p id="tagline">I chews you</p>
+          <%= image_tag "shark_vector.png", alt: "shark cartoon" %>
+        <br>
+        <br>
+    </div>
+    <div class="container-home">
+      <h2>Welcome to SharkBait!</h2>
+        <p>your number-one resource for all your shark needs</p>
+          <br>
+          <br>
+    </div>
+    <div class="container-home d-flex flex-column">      
+      <h2>Join the Reef so you can...</h2>
+          <br>
+        <p>Rent a shark, for all your sharking needs!</p>
+        <p>Impress your friends with your cool new pet shark!</p>
+        <p>Enjoy the thrills of shark ownership from the comfort of your own bathtub!</p>
+            <br>
+          <a href="<%= sharks_path%>" class="btn-big">Meet the Sharks now</a>
+            <br>
+    </div>
+  </div>
+</div>
 
-<br>
-<br>
-<ul>
-<li>Ever felt like your life was hollow and needed a little bite?
-</li>
-<li>Are you allergic to cats but always wanted a pet?</li>
-<li>Did you ever think dog-ownership was for self-hating suckers?</li>
-</ul>
-<br>
-<h2>SharkBait is the place for you!</h2>
-<br>
-<br>
-
-<a href="<%= sharks_path%>" class="btn-big">Meet the Sharks now</a>
-
-<br>
-<br>
-<h2>Thanks to SharkBait you can</h2>
-<br>
-<ul>
-<li>Rent a shark, for all your sharking needs!</li>
-<li>Impress your friends with your cool new shark pet!</li>
-<li>Enjoy the thrills of shark ownership from the comfort of your own bathtub!</li>
-</ul>
-<br>
-
-<%# <a href= "" class="btn-big">Sign-up now!</a> %>
-
+      <%# <p>Ever felt like your life was hollow and needed a little bite?</p>
+      <p>Are you allergic to cats but always wanted a pet?</p>
+      <p>Did you ever think dog-ownership was for self-hating suckers?</p>
+        <br> %>
