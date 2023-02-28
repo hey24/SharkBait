@@ -1,1 +1,33 @@
-<h1>Show</h1>
+<div class="show-shark">
+  <h1><%= @shark.name %></h1>
+  <div class="details-flex">
+    <img src="<%= @shark.picture_url%>" alt="shark image">
+    <div class="shark-details">
+      <p>Age: <%= @shark.age %></p>
+      <p>Shark Breed: <%= @shark.breed %></p>
+      <p>Diet: <%= @shark.diet %></p>
+      <p>£<%= @shark.price %></p>
+    </div>
+  </div>
+  <br>
+  <div class="details-flex">
+    <div class="shark-description">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+        cupiditate rerum asperiores voluptas! Aspernatur, obcaecati. Incidunt
+        pariatur consectetur error iure fugiat, ea voluptatibus sint architecto
+        minus neque dolore quos, omnis dolores facilis consequatur distinctio
+        quis, veniam ipsum quas? Tempora ea eius veritatis facilis ipsum
+        eligendi doloremque rem est esse. Beatae quibusdam reprehenderit
+        tempora necessitatibus a sapiente amet odio repellat aliquam, dolorem
+        accusantium sequi culpa labore fuga magni et quaerat hic iure iste!
+        Nemo est quasi tempora libero autem nihil soluta itaque qui nostrum
+        esse nobis rerum error laborum, odio praesentium? Qui unde recusandae
+        minima hic possimus aspernatur voluptate in sequi.
+      </p>
+    </div>
+    <div class="embed-booking">
+      <p>Add booking info</p>
+    </div>
+  </div>
+</div>

@@ -51,6 +51,11 @@
   background-color: aquamarine;
 }
 
+.details-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .cards {
   display: grid;
