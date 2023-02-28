@@ -1,5 +1,5 @@
 <%= simple_form_for [@shark, @booking] do |f| %>
-  <%= f.input :start_date %>
-  <%= f.input :end_date %>
+  <%= f.input :start_date, :label_html => { :class => 'text-white' } %>
+  <%= f.input :end_date, :label_html => { :class => 'text-white' } %>
   <%= f.submit 'Book Shark', class: "btn btn-primary" %>
 <% end %>
