@@ -1,6 +1,6 @@
 <div class="show-shark">
-  <h1><%= @shark.name %></h1>
-  <div class="details-flex">
+  <h2><%= @shark.name %></h2>
+  <div class="image-details-flex">
     <img src="<%= @shark.picture_url%>" alt="shark image">
     <div class="shark-details">
       <p>Age: <%= @shark.age %></p>
@@ -27,7 +27,9 @@
       </p>
     </div>
     <div class="embed-booking">
-      <p>Add booking info</p>
+      <h2>Book <%= @shark.name %></h2>
+      <%= render 'bookings/form' %>
     </div>
   </div>
+  <%= link_to "See All Sharks", sharks_path, class: "btn btn-primary" %>
 </div>

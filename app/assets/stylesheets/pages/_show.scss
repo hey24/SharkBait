@@ -4,7 +4,14 @@
   padding: 16px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   border-radius: 5px;
-  background-color: #004271b5
+  background-color: #004271b5;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.image-details-flex {
+  display: flex;
+  justify-content: start;
 }
 
 .details-flex {
@@ -13,12 +20,25 @@
 }
 
 .details-flex img {
-  width: 50%;
+  width: 50vw;
   height: 240px;
   object-fit: cover;
   border-radius: 5px;
 }
 
+.shark-details p {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.shark-details {
+  padding-left: 8px;
+}
+
 .shark-description {
   width: 50%;
+}
+
+.embed-booking h2 {
+  color: white;
 }
