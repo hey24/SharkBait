@@ -1,8 +1,9 @@
 .footer {
-  background: #aac4fc;                       
-  padding: 30px;                             
-  border-radius: 4px;                        
-  box-shadow: 0 10px 30px rgba(0,0,0,.1); 
+  border-radius: 0px;
+  padding-top: 14px;
+  background: #aac4fc;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
   font-family: 'Trebuchet MS';
   display: flex;
   justify-content: space-evenly;
@@ -11,16 +12,15 @@
   width: 100%;
   background-image: url(ocean4);
   background-size: cover;
-  a {
-    text-decoration: none;
-    font-size: 16;
-    text-shadow: 4px;
-    color: white;
-    
-  }
 }
 
-.body {
-  min-height: 100vh;
+.col a {
+  text-decoration: none;
+  text-shadow: 4px;
+  color: white;
 }
 
+.col p{
+  text-align: center;
+  font-size: 14px;
+}

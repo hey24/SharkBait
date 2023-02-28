@@ -3,16 +3,16 @@ class BookingsController < ApplicationController
   before_action :set_booking, only: [:destroy]
 
   def new
-    @booking = Booking.new
   end
 
   def create
     @booking = Booking.new(booking_params)
     @booking.shark = @shark
+    @booking.user = current_user
     if @booking.save
       redirect_to shark_path(@shark)
     else
-      render 'sharks/show', status: :unprocessable_entity
+      render 'bookings/new', status: :unprocessable_entity
     end
   end
 
