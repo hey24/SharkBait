@@ -3,19 +3,34 @@
   font-family: 'Climate Crisis', cursive;
   font-size: 44px;
   padding: 20;
+  text-align: center;
 }
 
 .container-pages h2 {
   color: white;
-  font-size: 28px;
-  font-family: "Eater Caps";  
+  font-size: 28px;  
   line-height: 26.4px;
   padding: 20;
+  text-align: center;
 }
 
 .container-pages ul, p {
   color: white;
   font-style: italic;
   font-size: 20px;
+  text-align: center;
 }
 
+.card-homepage {
+  box-shadow: 2px 2px 3px;
+  background-color: #003B66;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+  padding: 20px
+}
+
+.btn-big {
+  align-self: center;
+  padding: 24px
+}
+
+.
