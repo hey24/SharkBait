@@ -1,9 +1,21 @@
 .container-pages h1 {
   color: white;
   font-family: 'Climate Crisis', cursive;
+  font-size: 44px;
+  padding: 20;
 }
 
-.container-pages p {
+.container-pages h2 {
+  color: white;
+  font-size: 28px;
+  font-family: "Eater Caps";  
+  line-height: 26.4px;
+  padding: 20;
+}
+
+.container-pages ul, p {
   color: white;
   font-style: italic;
+  font-size: 20px;
 }
+
