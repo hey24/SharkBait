@@ -16,7 +16,7 @@ class BookingsController < ApplicationController
     @booking.shark = @shark
     @booking.user = current_user
     if @booking.save
-      redirect_to shark_path(@shark)
+      redirect_to bookings_path
     else
       render 'bookings/new', status: :unprocessable_entity
     end
