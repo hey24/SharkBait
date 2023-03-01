@@ -2,6 +2,12 @@ class BookingsController < ApplicationController
   before_action :set_shark, only: [:new, :create]
   before_action :set_booking, only: [:destroy]
 
+  def index
+    @user_id = current_user.id
+    @bookings = Booking.where(user_id: @user_id)
+    @sharks = Shark.where(user_id: @user_id)
+  end
+
   def new
   end
 

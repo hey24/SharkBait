@@ -1,0 +1,13 @@
+<h2>Welcome to your booking page</h2>
+
+<% @bookings.each do |booking, shark| %>
+  <% @sharks.each do |shark| %>
+    <p><%= shark.name %></p>
+  <% end %>
+<p><%= booking.start_date%>------<%=booking.end_date%></p>
+<% end %>
+
+
+
+<%# <% @user.bookings.each do |booking| %>
+<p><%=  %></p> %>
