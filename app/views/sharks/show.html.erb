@@ -1,11 +1,11 @@
 <div class="show-shark">
-  <h2><%= @shark.name %></h2>
+  <h2><%= @shark.name.capitalize %></h2>
   <div class="image-details-flex">
     <img src="<%= @shark.picture_url%>" alt="shark image">
     <div class="shark-details">
-      <p>Age: <%= @shark.age %></p>
-      <p>Shark Breed: <%= @shark.breed %></p>
-      <p>Diet: <%= @shark.diet %></p>
+      <p><strong>Age: </strong><%= @shark.age %></p>
+      <p><strong>Shark Breed: </strong><%= @shark.breed %></p>
+      <p><strong>Diet: </strong><%= @shark.diet %></p>
       <p>£<%= @shark.price %></p>
     </div>
   </div>
@@ -13,23 +13,13 @@
   <div class="details-flex">
     <div class="shark-description">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
-        cupiditate rerum asperiores voluptas! Aspernatur, obcaecati. Incidunt
-        pariatur consectetur error iure fugiat, ea voluptatibus sint architecto
-        minus neque dolore quos, omnis dolores facilis consequatur distinctio
-        quis, veniam ipsum quas? Tempora ea eius veritatis facilis ipsum
-        eligendi doloremque rem est esse. Beatae quibusdam reprehenderit
-        tempora necessitatibus a sapiente amet odio repellat aliquam, dolorem
-        accusantium sequi culpa labore fuga magni et quaerat hic iure iste!
-        Nemo est quasi tempora libero autem nihil soluta itaque qui nostrum
-        esse nobis rerum error laborum, odio praesentium? Qui unde recusandae
-        minima hic possimus aspernatur voluptate in sequi.
+        <%= @shark.description %>
       </p>
     </div>
     <div class="embed-booking">
-      <h2>Book <%= @shark.name %></h2>
+      <h3>Book <%= @shark.name %></h3>
       <%= render 'bookings/form' %>
     </div>
   </div>
-  <%= link_to "See All Sharks", sharks_path, class: "btn btn-primary" %>
+  <%= link_to "Back to sharks", sharks_path, class: "btn btn-primary" %>
 </div>
