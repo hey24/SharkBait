@@ -1,6 +1,6 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon nav-height">
   <div class="container-fluid">
-    <%= link_to "#", class: "navbar-brand" do %>
+    <%= link_to root_path, class: "navbar-brand" do %>
       <%= image_tag "LogoSharkBait2.jpg"%>
     <% end %>
 
@@ -12,18 +12,18 @@
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item active">
-            <%#= link_to "Home", "#", class: "nav-link" %>
+            <%= link_to "List a Shark", new_shark_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <%#= link_to "Messages", "#", class: "nav-link" %>
+            <%= link_to "See all sharks", sharks_path , class: "nav-link" %>
           </li>
           <li class="nav-item dropdown">
             <%= image_tag "Avatar_Photo.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "HomePage", "#", class: "dropdown-item" %>
-              <%= link_to "Browse SHARKS", "#", class: "dropdown-item" %>
-              <%= link_to "About Us", "#", class: "dropdown-item" %>
-              <%= link_to "Log Out", "#", class: "dropdown-item", data: {turbo_method: :delete} %>
+              <%= link_to "HomePage", root_path , class: "dropdown-item" %>
+              <%= link_to "Browse SHARKS", sharks_path, class: "dropdown-item" %>
+              <%= link_to "List a shark", new_shark_path , class: "dropdown-item" %>
+              <%= link_to "Log Out", destroy_user_session_path, class: "dropdown-item", data: {turbo_method: :delete} %>
             </div>
           </li>
         <% else %>
