@@ -1,0 +1,6 @@
+<h2>Welcome to your booking page</h2>
+
+<% @bookings.each do |booking| %>
+  <img src="<%= booking.shark.picture_url %>"></img>
+  <p>Shark: <%=booking.shark.name%><br> From: <%=booking.start_date%><br>To: <%=booking.end_date%></p>
+<% end %>
