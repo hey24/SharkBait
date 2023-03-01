@@ -31,6 +31,9 @@
   font-weight: bold;
 }
 
+.card-flex-content {
+  justify-content: start;
+}
 
 .card-category {
   background-size: cover;
@@ -56,6 +59,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
+}
+
+.dark-text {
+  color: black;
 }
 
 // Smallest device
