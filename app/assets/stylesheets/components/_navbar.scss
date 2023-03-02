@@ -4,6 +4,7 @@
   position:sticky;
   top:0;
   width: 100%;
+  z-index: 1100;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -20,4 +21,18 @@
 
 .nav-height {
   height: 70px;
+}
+
+.navbar-lewagon #company_name{
+  color: #00327F;
+  font-family: 'Climate Crisis', cursive;
+  font-size: 24px;
+  padding: 20px;
+  text-align: center;
+  margin-left: 204px;
+  margin-bottom: 0;
+}
+
+.navbar-lewagon .red-text {
+  color: rgb(148, 2, 2);
 }
