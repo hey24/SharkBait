@@ -12,7 +12,7 @@
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item active">
-            <%= link_to "List a Shark", new_shark_path, class: "nav-link" %>
+            <%= link_to "List a shark", new_shark_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
             <%= link_to "See all sharks", sharks_path , class: "nav-link" %>
@@ -21,10 +21,10 @@
             <%= image_tag "Avatar_Photo.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to "Homepage", root_path , class: "dropdown-item" %>
-              <%= link_to "Browse Sharks", sharks_path, class: "dropdown-item" %>
+              <%= link_to "Browse sharks", sharks_path, class: "dropdown-item" %>
               <%= link_to "Add a new shark", new_shark_path , class: "dropdown-item" %>
-              <%= link_to "My Bookings", bookings_path , class: "dropdown-item" %>
-              <%= link_to "Log Out", destroy_user_session_path, class: "dropdown-item", data: {turbo_method: :delete} %>
+              <%= link_to "My bookings", bookings_path , class: "dropdown-item" %>
+              <%= link_to "Log out", destroy_user_session_path, class: "dropdown-item", data: {turbo_method: :delete} %>
             </div>
           </li>
         <% else %>
