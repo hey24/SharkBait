@@ -12,7 +12,7 @@
               <h4 class="dark-text">Total cost: £<%= (booking.shark.price * (booking.end_date - booking.start_date)).to_i %></h4>
               <p class="dark-text">From: <%=booking.start_date%><br>To: <%=booking.end_date%></p>
             </div>
-            <%= link_to "Chews me", sharks_path, class: "btn-big" %>
+            <%= link_to "See shark", shark_path(booking.shark), class: "btn-big" %>
           </div>
         </div>
       <% end %>
