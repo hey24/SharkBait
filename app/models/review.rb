@@ -1,5 +1,6 @@
 class Review < ApplicationRecord
   belongs_to :shark
+  belongs_to :user
   ratings = (0..5)
 
   validates :title, presence: true

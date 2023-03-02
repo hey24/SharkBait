@@ -24,15 +24,19 @@
       <%= render 'bookings/form' %>
     </div>
   </div>
+    <br>
     <div class="embed-review-form">
       <h2>Reviews</h2>
-      <ul class="list-reviews">
-        <% @shark.reviews.each do |review| %>
-          <li class="list-review-item"><%= review.title %></li>
-          <li class="list-review-item"><%= review.content %></li>
-          <li class="list-review-item"><%= review.rating %></li>
-        <% end %>
-      </ul>
+      <div class="list-reviews-flex">
+          <% @shark.reviews.each do |review| %>
+            <div class="list-review-detail">
+              <h5><%= review.title %></h5>
+              <p><%= review.content %></p>
+              <p>Rating: <%= review.rating %></p>
+              <p><em>- <%=review.user.first_name%> <%=review.user.last_name%></em></p>
+            </div>
+          <% end %>
+      </div>
       <br>
       <%= render 'reviews/form' %>
     </div>

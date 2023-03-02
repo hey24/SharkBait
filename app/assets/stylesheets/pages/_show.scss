@@ -77,7 +77,48 @@
       }
     }
   }
+
+  .embed-review-form {
+    // border: solid;
+
+    h2 {
+      text-align: left;
+    }
+
+    .list-reviews-flex {
+      // border: solid;
+      display: flex;
+      // flex-wrap: wrap;
+
+      .list-review-detail {
+        // border: solid;
+        width: 50%;
+        margin: 16px;
+        // background-color: #47b2cf97;
+        // border-radius: 16px;
+        // color: white;
+      }
+    }
+  }
 }
+
+
+// </div>
+// <div class="embed-review-form">
+//   <h2>Reviews</h2>
+//   <div class="list-reviews-flex">
+//     <div class="list-review-item">
+//       <% @shark.reviews.each do |review| %>
+//         <div class="list-review-detail">
+//           <p><%= review.title %></p>
+//           <p><%= review.content %></p>
+//           <p><%= review.rating %></p>
+//         </div>
+//       <% end %>
+//     </div>
+//   </div>
+//   <br>
+//   <%= render 'reviews/form' %>
 
 
 // .btn-primary {
