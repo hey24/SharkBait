@@ -1,0 +1,94 @@
+.homepage-cards-container{
+  width: 1000px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.homepage-cards-container .homepage-card{
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.homepage-cards-container .homepage-card .face{
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.homepage-cards-container .homepage-card .face.face1{
+  position: relative;
+  background: #358FB3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.homepage-cards-container .homepage-card:hover .face.face1{
+  background: #358FB3;
+  transform: translateY(0);
+}
+
+.homepage-cards-container .homepage-card .face.face1 .home-card-content{
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.homepage-cards-container .homepage-card:hover .face.face1 .home-card-content{
+  opacity: 1;
+}
+
+.homepage-cards-container .homepage-card .face.face1 .home-card-content i{
+  max-width: 100px;
+  color: #fff;
+  font-size: 60px;
+
+}
+
+.homepage-cards-container .homepage-card .face.face1 .home-card-content h3{
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.homepage-cards-container .homepage-card .face.face2{
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  transform: translateY(-100px);
+}
+
+.homepage-cards-container .homepage-card:hover .face.face2{
+  transform: translateY(0);
+}
+
+.homepage-cards-container .homepage-card .face.face2 .content p{
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.homepage-card-container .homepage-card .face.face2 .content a{
+  margin: 15px 0 0;
+  display:  inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.homepage-card-container .homepage-card .face.face2 .content a:hover{
+  background: #333;
+  color: #fff;
+}
