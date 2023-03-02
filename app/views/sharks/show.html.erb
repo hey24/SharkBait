@@ -1,25 +1,28 @@
 <div class="show-shark">
-  <h2><%= @shark.name.capitalize %></h2>
+  <h2><%= @shark.name %></h2>
   <div class="image-details-flex">
     <img src="<%= @shark.picture_url%>" alt="shark image">
     <div class="shark-details">
       <p><strong>Age: </strong><%= @shark.age %></p>
       <p><strong>Shark Breed: </strong><%= @shark.breed %></p>
       <p><strong>Diet: </strong><%= @shark.diet %></p>
-      <p>£<%= @shark.price %></p>
+      <p><strong>Price:</strong> £<%= @shark.price %>/day</p>
     </div>
   </div>
   <br>
   <div class="details-flex">
     <div class="shark-description">
+      <h3>About <%= @shark.name %></h3>
+      <br>
       <p>
         <%= @shark.description %>
       </p>
     </div>
     <div class="embed-booking">
       <h3>Book <%= @shark.name %></h3>
+      <br>
       <%= render 'bookings/form' %>
     </div>
   </div>
-  <%= link_to "Back to sharks", sharks_path, class: "btn-big" %>
+<!-- <%= link_to "Back to sharks", sharks_path, class: "btn-big" %> -->
 </div>
