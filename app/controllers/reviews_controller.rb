@@ -12,7 +12,8 @@ class ReviewsController < ApplicationController
     if @review.save
       redirect_to shark_path(@shark)
     else
-      render :new, status: :unprocessable_entity
+      # render :new, status: :unprocessable_entity
+      flash.alert = "Review can't be saved. Please enter information."
     end
   end
 
