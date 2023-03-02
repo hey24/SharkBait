@@ -16,13 +16,15 @@
   </head>
 
   <body>
+  <div class="wrapper">
     <%= render "shared/navbar" %>
     <div class="container-pages">
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
       <%= yield %>
-      <body style="min-height: 100vh;">
     </div>
+    <div class="push"></div>
+  </div>
     <%= render "shared/footer" %>
   </body>
 </html>
