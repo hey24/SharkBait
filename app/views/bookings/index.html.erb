@@ -1,16 +1,21 @@
 <div class="card-homepage">
 <div class="bookings-title">
-    <h2 id="company_name">Your Bookings</h2>
+    <h2 id="company_name">Your Book<span class="red-text">i</span>ngs</h2>
 </div>
-  <div class="container-bookings">
-    <div class="cards">
-    <% @bookings.each do |booking| %>
-    <div class="card-shark">
-       <img src="<%= booking.shark.picture_url %>">
-       <h3 id="card-text-bookings"><%=booking.shark.name%></h3>
-       <p id="card-text-bookings">From: <%=booking.start_date%><br>To: <%=booking.end_date%></p>
-     </div>
-     <% end %>
+  <div class="cards">
+      <% @bookings.each do |booking| %>
+        <div class="card-shark">
+          <img src="<%= booking.shark.picture_url%>" alt="">
+          <div class="card-shark-info">
+            <div class="card-flex-content">
+              <h3 class="dark-text"><strong><%= booking.shark.name %></strong></h3>
+              <h4 class="dark-text">Total cost: £<%= (booking.shark.price * (booking.end_date - booking.start_date)).to_i %></h4>
+              <p class="dark-text">From: <%=booking.start_date%><br>To: <%=booking.end_date%></p>
+            </div>
+            <%= link_to "Chews me", sharks_path, class: "btn-big" %>
+          </div>
+        </div>
+      <% end %>
     </div>
-  </div>
+
 </div>
