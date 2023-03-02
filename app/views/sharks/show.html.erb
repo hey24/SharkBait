@@ -24,5 +24,17 @@
       <%= render 'bookings/form' %>
     </div>
   </div>
+    <div class="embed-review-form">
+      <h2>Reviews</h2>
+      <ul class="list-reviews">
+        <% @shark.reviews.each do |review| %>
+          <li class="list-review-item"><%= review.title %></li>
+          <li class="list-review-item"><%= review.content %></li>
+          <li class="list-review-item"><%= review.rating %></li>
+        <% end %>
+      </ul>
+      <br>
+      <%= render 'reviews/form' %>
+    </div>
 <!-- <%= link_to "Back to sharks", sharks_path, class: "btn-big" %> -->
 </div>
