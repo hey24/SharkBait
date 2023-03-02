@@ -24,5 +24,24 @@
       <%= render 'bookings/form' %>
     </div>
   </div>
-<!-- <%= link_to "Back to sharks", sharks_path, class: "btn-big" %> -->
+    <br>
+    <div class="embed-review-form">
+      <h2>Reviews</h2>
+      <div class="list-reviews-flex">
+          <% @shark.reviews.each do |review| %>
+            <div class="list-review-detail">
+              <h5><%= review.title %>&nbsp;&nbsp;<%= '⭐️' * review.rating %></h5>
+              <p><%= review.content %></p>
+             <!-- <p>Rating: <%= review.rating %></p> -->
+              <p><em>- <%=review.user.first_name%> <%=review.user.last_name%></em></p>
+              <%= link_to "Delete", review_path(review), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+            </div>
+          <% end %>
+      </div>
+      <br>
+      <%= render 'reviews/form' %>
+    </div>
+
+    <%= link_to "Edit shark", edit_shark_path, class: "btn-big" %>
+    <%= link_to "Delete shark", sharks_path(@shark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "btn-big" %>
 </div>
