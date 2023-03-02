@@ -3,6 +3,10 @@
   margin: 30px;
 }
 
+.bookings-card-info h3, .bookings-card-info p {
+  padding: 8px 0 0 8px;
+}
+
 #company_name{
   color: #00327F;
   font-family: 'Climate Crisis', cursive;
@@ -12,7 +16,7 @@
 }
 
 #card-text-bookings{
-  color:black;
+  color: rgba(0, 0, 0, 0.6);
   h3{
     padding: 20px;
   }
