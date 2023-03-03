@@ -37,7 +37,7 @@ class SharksController < ApplicationController
 
   def destroy
     @shark.destroy
-    redirect_to sharks_path, status: see_other
+    redirect_to sharks_path, status: :see_other
   end
 
   private
