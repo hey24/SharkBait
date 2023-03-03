@@ -87,7 +87,9 @@
   }
 
   .embed-review-form {
-    // border: solid;
+    border: ridge;
+    border-radius: 10px;
+    padding-bottom: 30px;
 
     h2 {
       text-align: left;
@@ -109,6 +111,7 @@
     }
   }
 }
+
 
 #text-no-reviews {
   margin-left: 16px;
