@@ -27,7 +27,11 @@
     <br>
     <div class="embed-review-form">
       <h2>Reviews</h2>
-      <div class="list-reviews-flex">
+
+    <div class="list-reviews-flex">
+      <% if @shark.reviews.blank? %>
+        <p id="text-no-reviews">No'fin here yet. Be the first to leave a review for </p> &nbsp;<%= @shark.name %>!
+      <% else %>
           <% @shark.reviews.each do |review| %>
             <div class="list-review-detail">
               <h5><%= review.title %>&nbsp;&nbsp;<%= '⭐️' * review.rating %></h5>
@@ -37,11 +41,15 @@
               <%= link_to "Delete", review_path(review), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
             </div>
           <% end %>
-      </div>
-      <br>
-      <%= render 'reviews/form' %>
+      <% end %>
+    </div>
+    <br>
+    <%= link_to "Leave a review", new_shark_review_path(@shark), class: "btn-big" %>
+    <br>
     </div>
 
-    <%= link_to "Edit shark", edit_shark_path, class: "btn-big" %>
-    <%= link_to "Delete shark", shark_path(@shark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "btn-big" %>
+<br>
+<br>
+<%= link_to "Edit shark", edit_shark_path %>
+<%= link_to "Delete shark", shark_path(@shark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
 </div>
