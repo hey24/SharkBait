@@ -58,6 +58,14 @@ a {
   text-decoration: none;
 }
 
+.edit-delete-icons{
+  justify-content: end;
+}
+
+.showpage-icons{
+  display:flex;
+  justify-content: space-between;
+}
 // .text-price {
 //   font-weight: bold;
 //   font-size: 16px;
