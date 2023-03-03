@@ -1,5 +1,20 @@
 <div class="show-shark">
+  <div class="shark-title">
+    <div class="showpage-icons">
+      <%= link_to sharks_path do %>
+        <i class="fa-solid fa-arrow-left"></i>
+      <% end %>
+      <div class="edit-delete-icons">
+        <%= link_to edit_shark_path do %>
+          <i class="fas fa-edit"></i>
+        <% end %>
+        <%= link_to shark_path(@shark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
+          <i class="fa-solid fa-trash-can"></i>
+        <% end %>
+      </div>
+    </div>
   <h2><%= @shark.name %></h2>
+  </div>
   <div class="image-details-flex">
     <img src="<%= @shark.picture_url%>" alt="shark image">
     <div class="shark-details">
@@ -12,7 +27,9 @@
   <br>
   <div class="details-flex">
     <div class="shark-description">
+    <div class="title-icons">
       <h3>About <%= @shark.name %></h3>
+      </div>
       <br>
       <p>
         <%= @shark.description %>
@@ -47,9 +64,4 @@
     <%= link_to "Leave a review", new_shark_review_path(@shark), class: "btn-big" %>
     <br>
     </div>
-
-<br>
-<br>
-<%= link_to "Edit shark", edit_shark_path %>
-<%= link_to "Delete shark", shark_path(@shark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
 </div>
