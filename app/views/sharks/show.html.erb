@@ -1,20 +1,38 @@
 <div class="show-shark">
   <div class="shark-title">
     <div class="showpage-icons">
-      <%= link_to sharks_path do %>
+        <%= link_to sharks_path do %>
         <i class="fa-solid fa-arrow-left"></i>
-      <% end %>
-      <div class="edit-delete-icons">
-        <%= link_to edit_shark_path do %>
-          <i class="fas fa-edit"></i>
         <% end %>
+
+      <% if @shark.user == current_user %>
+        <div class="edit-delete-icons">
+        <%= link_to edit_shark_path do %>
+        <i class="fas fa-edit"></i>
+        <% end %>
+
         <%= link_to shark_path(@shark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
           <i class="fa-solid fa-trash-can"></i>
         <% end %>
+
+    <% else %>
+      <%= link_to sharks_path do %>
+          <i class="fa-solid fa-arrow-left" style="display:none"></i>
+        <% end %>
+
+        <div class="edit-delete-icons" style="display:none">
+          <%= link_to edit_shark_path do %>
+            <i class="fas fa-edit" style="display:none"></i>
+          <% end %>
+
+        <%= link_to shark_path(@shark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
+          <i class="fa-solid fa-trash-can" style="display:none"></i>
+        <% end %>
       </div>
+    <% end %>
     </div>
-  <h2><%= @shark.name %></h2>
   </div>
+    <h2><%= @shark.name %></h2>
   <div class="image-details-flex">
     <img src="<%= @shark.picture_url%>" alt="shark image">
     <div class="shark-details">
