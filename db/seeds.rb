@@ -45,4 +45,10 @@ Review.create(title: 'So happy about this website!', content: 'Good experience, 
 Review.create(title: 'Hurt.', content: 'I lost a finger because of this shark', rating: 2, shark_id: shark9.id, user_id:user1.id)
 Review.create(title: 'Unexeptable', content: 'NOT HAPPY!!!!!!', rating: 1, shark_id: shark6.id, user_id: user3.id)
 
+puts "Reviews Created!"
+puts "Adding a booking"
+
+Booking.create(start_date: '2024-04-12', end_date: '2024-06-12', user_id: user1.id, shark_id: shark3.id)
+
+puts "Added the Booking"
 puts "Seed file created!"
