@@ -30,7 +30,7 @@
 
     <div class="list-reviews-flex">
       <% if @shark.reviews.blank? %>
-        <p id="text-no-reviews">No'fin here yet. Be the first to leave a review for </p> &nbsp;<%= @shark.name %>!
+        <p id="text-no-reviews">No'fin here yet! Be the first to leave a review for </p> &nbsp;<%= @shark.name %>.
       <% else %>
           <% @shark.reviews.each do |review| %>
             <div class="list-review-detail">
