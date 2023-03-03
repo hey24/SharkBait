@@ -1,75 +1,84 @@
-.card-shark {
-  background-color: white;
-  width: 400px;
-  border-radius: 16px;
-  box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
-  transition: all .3s ease-in-out;
-}
-
-.card-shark img {
-  width: 100%;
-  height: 240px;
-  object-fit: cover;
-  border-radius: 16px 16px 0px 0px;
-}
-
-.card-shark:hover{
-  transform: scale(1.03);
-}
-
-
-.card-shark-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 12px;
-}
-
-.card-shark-info h4 {
-  font-size: 16px;
-}
-
-.card-shark-info h4, .card-shark-info p {
-  margin-top: 10px;
-}
-
-.text-price {
-  font-weight: bold;
-}
-
-.card-flex-content {
-  justify-content: start;
-}
-
-.card-category {
-  background-size: cover;
-  background-position: center;
-  height: 240px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
-
-.shark-picture {
-  background-color: aquamarine;
-}
-
-
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
 }
 
-.dark-text {
-  color: rgba(0, 0, 0, 0.6);
+.card-shark {
+  background-color: white;
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+  transition: all .3s ease-in-out;
+
+  img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
+  }
 }
+
+.card-shark:hover{
+  transform: scale(1.03);
+}
+
+.card-shark-info {
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  padding: 12px;
+  color: #003c66;
+
+  h3 {
+    margin: 0
+  }
+
+  p {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .card-flex-content {
+    margin: 12px;
+  }
+
+  // h4 {
+  //   font-size: 16px;
+  // }
+
+  // h4, p {
+  //   margin-top: 10px;
+  // }
+}
+
+// .text-price {
+//   font-weight: bold;
+//   font-size: 16px;
+// }
+
+// .card-category {
+//   background-size: cover;
+//   background-position: center;
+//   height: 240px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   color: white;
+//   font-size: 24px;
+//   font-weight: bold;
+//   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+//   border-radius: 5px;
+//   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+// }
+
+// .shark-picture {
+//   background-color: aquamarine;
+// }
+
+// .dark-text {
+//   color: rgba(0, 0, 0, 0.6);
+// }
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {

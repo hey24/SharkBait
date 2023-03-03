@@ -43,5 +43,5 @@
     </div>
 
     <%= link_to "Edit shark", edit_shark_path, class: "btn-big" %>
-    <%= link_to "Delete shark", sharks_path(@shark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "btn-big" %>
+    <%= link_to "Delete shark", sharks_path, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "btn-big" %>
 </div>
