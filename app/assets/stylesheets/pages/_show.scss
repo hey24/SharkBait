@@ -29,9 +29,12 @@
     img {
       height: 240px;
       object-fit: cover;
-      border-radius: 5px;
+      border-radius: 10px 0px 0px 10px;
       flex-grow: 1;
       box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+      border-top: ridge;
+      border-left: ridge;
+      border-bottom: ridge;
     }
 
     p {
@@ -43,7 +46,10 @@
   .shark-details {
     padding-left: 8px;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
-    border: ridge;
+    border-top: ridge;
+    border-right: ridge;
+    border-bottom: ridge;
+    border-radius: 0px 10px 10px 0px;
 
     p {
       margin: 16px;
@@ -63,6 +69,7 @@
       padding: 16px;
       box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
       border: ridge;
+      border-radius: 10px;
     }
 
     .embed-booking {
@@ -71,6 +78,7 @@
       padding: 16px;
       box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
       background: #47b2cf97;
+      border-radius: 10px;
 
       h2 {
         color: white;

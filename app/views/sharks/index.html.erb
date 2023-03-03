@@ -1,5 +1,6 @@
 <div class="card-homepage">
-  <h1>Our Sha<span class="red-text">r</span>ks</h1>
+  <h2>Our Sharks</h2>
+  <br>
 
   <div class="cards">
     <% @sharks.each do |shark| %>
@@ -7,8 +8,8 @@
         <img src="<%= shark.picture_url%>" alt="">
         <div class="card-shark-info">
           <div class="card-flex-content">
-            <h3 class="dark-text"><strong><%= shark.name %></strong></h3>
-            <h4 class="dark-text">£<%= shark.price %></h4>
+            <h3 class="dark-text"><%= shark.name %></h3>
+            <p class="dark-text"><strong>£<%= shark.price %></strong></p>
           </div>
           <%= link_to "Chews me", shark_path(shark), class: "btn-big" %>
         </div>

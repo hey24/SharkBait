@@ -15,6 +15,7 @@
   width: 300px;
   height: 200px;
   transition: 0.5s;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .homepage-cards-container .homepage-card .face.face1{
@@ -45,7 +46,6 @@
   max-width: 100px;
   color: #fff;
   font-size: 60px;
-
 }
 
 .homepage-cards-container .homepage-card .face.face1 .home-card-content h3{
@@ -73,7 +73,7 @@
 }
 
 .homepage-cards-container .homepage-card .face.face2 .content p{
-  margin: 0;
+  margin: 15px;
   padding: 0;
   color: black;
 }
