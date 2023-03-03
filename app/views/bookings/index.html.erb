@@ -5,7 +5,9 @@
   <div class="cards">
       <% @bookings.each do |booking| %>
         <div class="card-shark">
-          <img src="<%= booking.shark.picture_url%>" alt="">
+          <%= link_to shark_path(booking.shark) do %>
+            <img src="<%= booking.shark.picture_url%>" alt="">
+          <% end %>
           <div class="card-shark-info">
             <div class="card-flex-content">
               <h3 class="dark-text"><strong><%= booking.shark.name %></strong></h3>
