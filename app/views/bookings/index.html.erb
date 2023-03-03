@@ -9,7 +9,7 @@
           <div class="card-shark-info">
             <div class="card-flex-content">
               <h3 class="dark-text"><strong><%= booking.shark.name %></strong></h3>
-              <h4 class="dark-text">Total cost: £<%= (booking.shark.price * (booking.end_date - booking.start_date)).to_i %></h4>
+              <h4 class="dark-text">Total: £<%= booking.shark.price %> x <%= (booking.end_date - booking.start_date).to_i %> days <br> £<%= (booking.shark.price * (booking.end_date - booking.start_date)).to_i %></h4>
               <p class="dark-text">From: <%=booking.start_date%><br>To: <%=booking.end_date%></p>
             </div>
             <%= link_to "See shark", shark_path(booking.shark), class: "btn-big" %>
