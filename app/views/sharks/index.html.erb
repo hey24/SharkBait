@@ -1,15 +1,16 @@
 <div class="card-homepage">
-  <h2>Our Sharks</h2>
-  <br>
+  <h1>Our Sha<span class="red-text">r</span>ks</h1>
 
   <div class="cards">
     <% @sharks.each do |shark| %>
       <div class="card-shark">
-        <img src="<%= shark.picture_url%>" alt="">
+        <%= link_to shark_path(shark) do %>
+          <img src="<%= shark.picture_url%>" alt="">
+        <% end %>
         <div class="card-shark-info">
           <div class="card-flex-content">
-            <h3 class="dark-text"><%= shark.name %></h3>
-            <p class="dark-text"><strong>£<%= shark.price %></strong></p>
+            <h3 class="dark-text"><strong><%= shark.name %></strong></h3>
+            <h4 class="dark-text">£<%= shark.price %></h4>
           </div>
           <%= link_to "Chews me", shark_path(shark), class: "btn-big" %>
         </div>
