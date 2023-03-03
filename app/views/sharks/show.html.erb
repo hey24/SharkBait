@@ -1,5 +1,10 @@
 <div class="show-shark">
+  <div class="shark-title">
+  <%= link_to sharks_path, class: 'text-decoration:none' do %>
+  <i class="fa-solid fa-arrow-left"></i>
+  <% end %>
   <h2><%= @shark.name %></h2>
+  </div>
   <div class="image-details-flex">
     <img src="<%= @shark.picture_url%>" alt="shark image">
     <div class="shark-details">
