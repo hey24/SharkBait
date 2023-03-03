@@ -73,9 +73,11 @@
               <p><%= review.content %></p>
              <!-- <p>Rating: <%= review.rating %></p> -->
               <p><em>- <%=review.user.first_name%> <%=review.user.last_name%></em></p>
+            <% if review.user == current_user %>
               <%= link_to review_path(review), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
                 <i class="fa-solid fa-trash-can"></i>
               <% end %>
+            <% end %>
           </div>
         <% end %>
       <% end %>
