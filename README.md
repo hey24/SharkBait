@@ -9,7 +9,7 @@ Table of Contents
   </ol>
 
 ## About
-<p>SharkBait is a marketplace to rent a shark, you can list your shark or find yourself a new friend!</p>
+<p>SharkBait is a wesbite and online marketplace to rent and list sharks - you can hire out your shark or find yourself a new friend!</p>
 <p>Just to let you know, we don't deal with deliveries.</p>
 <p>Visit the website online:</p>
 https://sharkbait-hey24.herokuapp.com
@@ -22,7 +22,7 @@ https://sharkbait-hey24.herokuapp.com
 ![SharkBait-home](https://user-images.githubusercontent.com/84138514/227789569-f79d5c5c-67f2-4319-b064-ee515caad893.gif)
 
 <br>
-2. You can view the listings, make a booking, view the reviews and and see your bookings
+2. You can view listings, make a booking, leave a review and and see your rentals
 
 ![SharkBait-rental](https://user-images.githubusercontent.com/84138514/227790175-867921e0-1790-4d6d-b777-89c55caba4d6.gif)
 
